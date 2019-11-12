@@ -1,0 +1,56 @@
+{
+  "name": "applitoolshackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"./**/*.{js,ts,json}\"",
+    "format": "eslint --fix \"./**/*.{js,ts,json}\"",
+    "traditional:v1": "cross-env APP_VERSON=1 wdio wdio.conf.js --suite traditional",
+    "traditional:v2": "cross-env APP_VERSION=2 wdio wdio.conf.js --suite traditional",
+    "visualAI:v1": "cross-env VISUAL=true APP_VERSION=1 wdio wdio.conf.js --suite visualAI",
+    "visualAI:v2": "cross-env VISUAL=true APP_VERSION=2 wdio wdio.conf.js --suite visualAI"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ablok/ApplitoolsHackathon.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ablok/ApplitoolsHackathon/issues"
+  },
+  "homepage": "https://github.com/ablok/ApplitoolsHackathon#readme",
+  "devDependencies": {
+    "@applitools/eyes-selenium": "^4.31.16",
+    "@applitools/eyes-webdriverio": "^5.8.3",
+    "@types/chai": "^4.2.5",
+    "@types/mkdirp": "^0.5.2",
+    "@types/mocha": "^5.2.7",
+    "@types/uuid": "^3.4.6",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "@wdio/cli": "^5.16.6",
+    "@wdio/local-runner": "^5.16.6",
+    "@wdio/mocha-framework": "^5.16.5",
+    "@wdio/spec-reporter": "^5.16.5",
+    "@wdio/sync": "^5.16.5",
+    "allure-commandline": "^2.13.0",
+    "chai": "^4.2.0",
+    "chromedriver": "^78.0.1",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "fetch-base64": "^2.1.2",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "prettier": "^1.19.1",
+    "ts-node": "^8.5.0",
+    "typescript": "^3.7.2",
+    "uuid": "^3.3.3",
+    "wdio-chromedriver-service": "^5.0.2",
+    "webdriverio": "^5.16.6"
+  },
+  "dependencies": {}
+}

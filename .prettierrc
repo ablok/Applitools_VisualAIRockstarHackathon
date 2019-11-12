@@ -1,0 +1,13 @@
+{
+  "tabWidth": 4,
+  "printWidth": 120,
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": ["{*,.*}.{json,md}", ".eslintrc", ".prettierrc"],
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ]
+}
